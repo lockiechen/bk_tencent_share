@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
       platformVersion =
-          await BkTencentShare.register('wx876d79339239cfba', '/bkdevopsapp/*');
+          await BkTencentShare.register('WX_APP_ID', '/bkdevopsapp/*');
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
