@@ -1,11 +1,12 @@
 name: bk_tencent_share
-description: A new flutter plugin project.
-version: 0.0.1
-homepage: tencent.com
+description: share to tencent
+version: 0.0.6
+homepage: https://github.com/lockiechen/bk_tencent_share
+
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
-  flutter: ">=1.20.0 <2.0.0"
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.20.0"
 
 dependencies:
   flutter:
