@@ -8,12 +8,12 @@ import android.util.Log;
 
 /**
  * Created by hu on 16/8/1.
- * 消息合并转发
+ * 
  */
 public class WWMediaMergedConvs extends WWMediaMessage.WWMediaObject {
     private static final String TAG = "WWAPI.WWMediaConv";
     /**
-     * 消息列表 可以是 这里定义的各种消息和集合
+     * 
      */
     public List<WWMediaConversation> messages = new ArrayList<WWMediaConversation>();
 

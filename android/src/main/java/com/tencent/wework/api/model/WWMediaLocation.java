@@ -5,7 +5,6 @@ import android.util.Log;
 
 /**
  * Created by hu on 16/5/30.
- * Œª÷√
  */
 public class WWMediaLocation extends WWMediaMessage.WWMediaObject {
     private static final String TAG = "WWAPI.WWMediaLocation";

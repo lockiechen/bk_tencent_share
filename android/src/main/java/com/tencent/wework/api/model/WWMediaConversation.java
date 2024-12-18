@@ -8,26 +8,26 @@ import android.util.Log;
 
 /**
  * Created by hu on 16/8/1.
- * 单条聊天记录信息
+ * 
  */
 public class WWMediaConversation extends WWMediaMessage.WWMediaObject {
     private static final String TAG = "WWAPI.WWMediaConv";
     private static final int CONTENT_LENGTH_LIMIT = 10485760;
     private static final int PATH_LENGTH_LIMIT = 10240;
     /**
-     * 这条消息的发信人昵称
+     * 
      */
     public String name;
     /**
-     * 消息时间
+     * 
      */
     public long date;//ms
     /**
-     * 发信人头像
+     * 
      */
     public byte[] avatarData;
     /**
-     * 发信人头像url
+     * 
      */
     public String avatarPath;
     public WWMediaMessage.WWMediaObject message;

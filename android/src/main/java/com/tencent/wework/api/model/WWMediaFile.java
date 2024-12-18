@@ -7,21 +7,21 @@ import com.tencent.wework.api.model.WWMediaMessage.WWMediaObject;
 
 /**
  * Created by hu on 16/5/30.
- * 文件
+ * 
  */
 public class WWMediaFile extends WWMediaObject {
     private static final String TAG = "WWAPI.WWMediaFile";
     private int contentLengthLimit = 10485760;
     /**
-     * 文件二进制数据
+     * 
      */
     public byte[] fileData;
     /**
-     * 文件路径
+     * 
      */
     public String filePath;
     /**
-     * 文件名称
+     * 
      */
     public String fileName;
 

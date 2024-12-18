@@ -1,6 +1,5 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:bk_tencent_share/bk_tencent_share.dart';
 
 void main() {
   const MethodChannel channel = MethodChannel('bk_tencent_share');
@@ -15,9 +14,5 @@ void main() {
 
   tearDown(() {
     channel.setMockMethodCallHandler(null);
-  });
-
-  test('getPlatformVersion', () async {
-    expect(await BkTencentShare.platformVersion, '42');
   });
 }

@@ -7,7 +7,7 @@ import android.text.TextUtils;
 
 /**
  * Created by hu on 16/5/30.
- * µÇÂ½
+ * 
  */
 public class WWAuthMessage {
 

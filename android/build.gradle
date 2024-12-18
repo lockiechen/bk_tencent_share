@@ -2,14 +2,14 @@ group 'com.example.bk_tencent_share'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.6.0'
+    ext.kotlin_version = '2.0.20'
     repositories {
         google()
         jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath 'com.android.tools.build:gradle:8.7.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -25,8 +25,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 31
-
+    namespace 'com.example.bk_tencent_share'
+    compileSdkVersion 34
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
@@ -36,10 +36,19 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17
+    }
+
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     api 'com.tencent.mm.opensdk:wechat-sdk-android:6.8.0'
     implementation 'com.tencent.tauth:qqopensdk:3.51.1'
 

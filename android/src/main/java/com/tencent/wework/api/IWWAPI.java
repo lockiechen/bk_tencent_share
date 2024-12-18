@@ -1,8 +1,8 @@
 package com.tencent.wework.api;
 
-import android.content.Intent;
-
 import com.tencent.wework.api.model.BaseMessage;
+
+import android.content.Intent;
 
 public interface IWWAPI {
     /**
@@ -18,40 +18,40 @@ public interface IWWAPI {
 
     /**
      *
-     * @return 是否安装了企业微信
+     * @return 
      */
     boolean isWWAppInstalled();
 
     /**
      *
-     * @return 是否支持api
+     * @return 
      */
     boolean isWWAppSupportAPI();
 
     /**
      *
-     * @return 安装的企业微信版本
+     * @return 
      */
     int getWWAppSupportAPI();
 
     /**
-     * 打开企业微信
+     * 
      * @return
      */
     boolean openWWApp();
 
     /**
      *
-     * @param 发送的消息
-     * @return 消息是否合法
+     * @param 
+     * @return 
      */
     boolean sendMessage(BaseMessage var1);
 
     /**
      *
-     * @param var1 发送的包
-     * @param callback 回包
-     * @return 消息是否合法
+     * @param var1 
+     * @param callback 
+     * @return 
      */
     boolean sendMessage(BaseMessage var1, IWWAPIEventHandler callback);
     void detach();
